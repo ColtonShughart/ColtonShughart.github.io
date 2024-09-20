@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    background-color:lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main{
+    background-color: white;
+    padding:1em;
+    margin:0 auto;
+    max-width:1000px;
+}
+a:link{
+    color:darkgray;
+}
+a:visited{
+    color: #000000;
+}
+a:hover{
+    color: #52c6d7;
+}
+a:active{
+    color:white;
+}
+img{
+    height: 800px;
+    width: 800px;
+}
