@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise5</title>
+    <style>
+      body{
+            margin:0;
+            padding:0;
+            text-align: center;
+        }
+      main{
+            padding:1em;
+            background-color:white;
+            margin: auto;
+        }
+      #primary-nav{
+          background-color:#F4CC68;
+          width:934px;
+          margin:auto;
+        }
+      #primary-nav li{
+        list-style: none;
+        display:inline-block;
+      }
+      #primary-nav ul{
+        padding:0;
+      }
+      #primary-nav a{
+        display:block;
+        padding: 0.5em 1em;
+      }
+      a{
+        color:#d20000;
+        font-size: 28px;
+      }
+      h1{
+        font-size:36px;
+      }
+      p{
+        font-size:20px;
+      }
+      img{
+        height: 591px;
+        width: 788px;
+        position: relative;
+        margin:1em auto;
+      }
+      #toggle-nav{
+        background-color:transparent;
+        border:none;
+        font-size: 36px;
+        color: #d20000;
+        position:relative;
+        top:0em;
+        right:0em;
+        display:none;
+      }
+      @media (max-width:767px){
+        #primary-nav{
+          display:grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        body.nav-open #primary-nav{
+          grid-template-rows: 1fr;
+        }
+        #primary-nav li{
+          display:block;
+        }
+        #toggle-nav{
+          display:block;
+        }
+        .inner{
+          overflow: hidden;
+        }
+        img{
+          width:233px;
+          height:174.75px;
+        }
+      }
+    </style>
+</head>
+<body>
+  <main>
+    <button id="toggle-nav">&#9776;</button>
+    <nav id="primary-nav" role="navigation">
+     <div class="inner">
+      <ul>
+        <li><a href="#">Previous</a></li>
+        <li><a href="#" >1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">Next</a></li>
+      </ul>
+     </div>
+    </nav>
+      <script>
+        window.onload=()=>{
+          let toggleNav = document.getElementById("toggle-nav");
+          toggleNav.addEventListener ('click', ()=>{
+            document.body.classList.toggle("nav-open");
+            toggleNav.innerHTML = document.body.classList.contains("nav-open")
+               ? "&#x2715"
+               : "&#9776;";
+          });
+        };
+      </script>
+      <h1><a href="#">How to Draw Red From Angry Birds</a></h1>
+      <img src="IMG_2621.jpg">
+      <h1>Step 6</h1>
+      <p>For the top feathers, create two rounded tear shapes on the top of the head with the 
+        left points of the feathers going through the head.</p>
+    </main>
+</body>
+</html>

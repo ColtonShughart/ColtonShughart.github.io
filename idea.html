@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Design</title>
+    <style>
+        body{
+            font-size: x-large;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        main{
+            max-width:1200px;
+            background-color: white;
+            border: 8px black solid;
+            height: 2000px;
+            margin: 0 auto;
+        }
+        #box1{
+            background-color: darkred;
+            max-width: 800px;
+            padding:20px;
+            margin: auto;
+            border: black 10px dotted;
+        }
+        p{
+            color:white;
+        }
+        @media screen and (min-width: 1200px) {
+            body {
+                background-color: rgb(240, 154, 221);
+             }
+        }
+        #box2{
+            background-color:darkgreen;
+            max-width: 600px;
+            padding:20px;
+            border: darkred dashed 5px;
+            margin: auto
+        }
+        #spacing{
+            background-color:white;
+            height:50px;
+            width:10px auto;
+        }
+    </style>
+</head>
+<body>
+  <main>
+    <h1>Hello Responsive Design</h1>
+    <div id=box1><p>Lorem ipsum dolor sit, amet conse
+        ctetur adipisicing elit. Inventore, ut. Laborum excepturi magni
+        aspernatur ipsum dolore? Cupiditate ipsam, voluptates facilis nisi
+        eum enim eos totam expedita itaque ad ex, voluptatem nostrum quam, 
+        sapiente iusto delectus qui quae sint laudantium. Assumenda omnis 
+        aliquam quae voluptate quis, voluptas dolorem voluptatem repellendus fuga!</p> </div>
+    <div id="spacing"></div>
+    <div id="box2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Eos saepe assumenda et! Ea tempore provident fugiat voluptatibus, rerum modi?
+        Eveniet!</p></div>
+  </main>
+</body>
+</html>
