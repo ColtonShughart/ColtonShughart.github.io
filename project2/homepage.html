@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Draw Red- Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+     .irish-grover-regular {
+           font-family: "Irish Grover", system-ui;
+           font-weight: 400;
+           font-style: normal;
+       }
+      .roboto-regular {
+           font-family: "Roboto", sans-serif;
+           font-weight: 400;
+           font-style: normal;
+       }
+      body{
+            margin:0;
+            padding:0;
+            text-align: center; 
+            background-color:#FBEED7;
+        }
+        main{
+            padding:1em;
+            margin: auto;
+            background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black;
+            width: 934px
+        }
+        #primary-nav{
+          background-color:#F4CC68;
+          width:934px;
+          margin:auto;
+        }
+      #primary-nav li{
+        list-style: none;
+        display:inline-block;
+      }
+      #primary-nav ul{
+        padding:0;
+      }
+      #primary-nav a{
+        display:block;
+        padding: 0.5em 1em;
+      }
+      h1 > a{
+        font-size:50px
+      }
+      a{
+        color:#d20000;
+        text-decoration: none;
+        font-size: 28px;
+        font-family: "Irish Grover", system-ui;
+      }
+      a:hover{
+        color:black;
+      }
+      a:active{
+        color:#F4CC68;
+      }
+      h1{
+        font-size:50px;
+        font-family: "Irish Grover", system-ui;
+      }
+      ul{
+        font-size:20px;
+        font-family: "Roboto", system-ui;
+      }
+      .row{
+        display:flex;
+      }
+      .col1{
+        width:800px;
+        height:500px;
+        text-align: left;
+        padding-left:60px
+      }
+     .col2{
+         background-color:#F4CC68;
+         width:50%;
+         height:150px;
+         padding-top:20px; 
+         padding-left: 20px;
+         padding-right: 20px;
+         margin-top: 150px;
+         margin-right:60px;
+         border-radius:25px;
+     }
+      img{
+        position: relative;
+        margin:1em auto;
+        height:591px;
+        width:798px;
+      }
+      #toggle-nav{
+        background-color:transparent;
+        border:none;
+        font-size: 36px;
+        color: #d20000;
+        position:relative;
+        top:0em;
+        right:0em;
+        display:none;
+      }
+      @media (max-width:767px){
+        #primary-nav{
+          display:grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        body.nav-open #primary-nav{
+          grid-template-rows: 1fr;
+        }
+        #primary-nav li{
+          display:block;
+        }
+        #toggle-nav{
+          display:block;
+        }
+        .inner{
+          overflow: hidden;
+        }
+      }
+    </style>
+</head>
+<body>
+    <main>
+        <h1><a href="homepage.html">How to Draw Red From Angry Birds</a></h1>
+        <button id="toggle-nav">&#9776;</button>
+        <nav id="primary-nav" role="navigation">
+         <div class="inner">
+          <ul>
+            <li><a href="#" >1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="page6.html">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">Next</a></li>
+          </ul>
+         </div>
+        </nav>
+        <script>
+            window.onload=()=>{
+              let toggleNav = document.getElementById("toggle-nav");
+              toggleNav.addEventListener ('click', ()=>{
+                document.body.classList.toggle("nav-open");
+                toggleNav.innerHTML = document.body.classList.contains("nav-open")
+                   ? "&#x2715"
+                   : "&#9776;";
+              });
+            };
+          </script>
+          <img src="IMG_2624.jpg">
+          <div class="row">
+          <div class="col1">
+            <h1>Materials Needed:</h1>
+            <ul>
+                <li>Pencil</li>
+                <li>Eraser</li>
+                <li>Outlining Pen</li>
+                <li>Compass (optional)</li>
+                <li>Colored Pencils
+                    <ul>
+                        <li>Red</li>
+                        <li>Dark Red</li>
+                        <li>Peach</li>
+                        <li>Black</li>
+                        <li>Yellow</li>
+                        <li>Yellow-orange</li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <div class="col2">
+            <h1><a href="#">Let's Start</a></h1>
+          </div>
+          </div>
+
+
+</body>
+</html>
