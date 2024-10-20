@@ -28,7 +28,6 @@
            font-weight: 400;
            font-style: normal;
        }
-
       body{
             margin:0;
             padding:0;
@@ -96,7 +95,7 @@
         right:0em;
         display:none;
       }
-      @media (max-width:767px){
+      @media (max-width:1000px){
         #primary-nav{
           display:grid;
           grid-template-rows: 0fr;
@@ -113,6 +112,27 @@
         }
         .inner{
           overflow: hidden;
+          text-align:left;
+        }
+        h1{
+          width:100%;
+        }
+        p{
+          width:80%;
+          margin:2em;
+        }
+        img{
+          height:511px;
+          width:681px;
+        }
+        main{
+          width:100%
+        }
+      }
+      @media (max-width:600px){
+        img{
+          height:343px;
+          width:458px;
         }
       }
     </style>
