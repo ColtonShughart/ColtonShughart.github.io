@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Draw Red-Step 7</title>
+    <title>Step 7-How to Draw Red</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
@@ -13,141 +13,136 @@
     <link rel="icon" type="image/png" href="favicon-48x48.png" sizes="48x48" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <style>
-      html { 
-      background: url(Project2backdrop-01.jpg) no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+     .irish-grover-regular {
+         font-family: "Irish Grover", system-ui;
+         font-weight: 400;
+         font-style: normal;
+     }
+    .roboto-regular {
+         font-family: "Roboto", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+     }
+    body{
+          margin:0;
+          padding:0;
+          text-align: center; 
+          background: url(Project2backdrop-01.jpg) no-repeat center center fixed; 
+          background-size: cover;
       }
-      .irish-grover-regular {
-           font-family: "Irish Grover", system-ui;
-           font-weight: 400;
-           font-style: normal;
-       }
-      .roboto-regular {
-           font-family: "Roboto", sans-serif;
-           font-weight: 400;
-           font-style: normal;
-       }
-      body{
-            margin:0;
-            padding:0;
-            text-align: center; 
-        }
-      main{
-            padding:1em;
-            margin: auto;
-            background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black;
-            width: 934px;
-        }
+    main{
+          padding:1em;
+          margin: auto;
+          background: white; box-shadow: 0 0 20px black;
+          width: 934px;
+      }
+    #primary-nav{
+        background-color:#F4CC68;
+        width:100%;
+        margin:auto;
+        border-radius: 25px;
+      }
+    #primary-nav li{
+      list-style: none;
+      display:inline-block;
+    }
+    #primary-nav ul{
+      padding:0;
+    }
+    #primary-nav a{
+      display:block;
+      padding: 0.5em 1em;
+    }
+    h1 > a{
+      font-size:50px
+    }
+    a{
+      color:#d20000;
+      text-decoration: none;
+      font-size: 28px;
+      font-family: "Irish Grover", system-ui;
+    }
+    a:hover{
+      color:black;
+    }
+    a:active{
+      color:#F4CC68;
+    }
+    h1{
+      font-size:50px;
+      font-family: "Irish Grover", system-ui;
+    }
+    p{
+      font-size:20px;
+      font-family: "Roboto", system-ui;
+    }
+    img{
+      position: relative;
+      margin:1em auto;
+      height:591px;
+      width:798px;
+    }
+    #toggle-nav{
+      background-color:transparent;
+      border:none;
+      font-size: 36px;
+      color: #d20000;
+      position:relative;
+      top:0em;
+      right:0em;
+      display:none;
+    }
+    @media (max-width:1000px){
       #primary-nav{
-          background-color:#F4CC68;
-          width:100%;
-          margin:auto;
-          border-radius: 25px;
-        }
+        display:grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+      }
+      body.nav-open #primary-nav{
+        grid-template-rows: 1fr;
+      }
       #primary-nav li{
-        list-style: none;
-        display:inline-block;
-      }
-      #primary-nav ul{
-        padding:0;
-      }
-      #primary-nav a{
         display:block;
-        padding: 0.5em 1em;
-      }
-      h1 > a{
-        font-size:50px
-      }
-      a{
-        color:#d20000;
-        text-decoration: none;
-        font-size: 28px;
-        font-family: "Irish Grover", system-ui;
-      }
-      a:hover{
-        color:black;
-      }
-      a:active{
-        color:#F4CC68;
-      }
-      h1{
-        font-size:50px;
-        font-family: "Irish Grover", system-ui;
-      }
-      p{
-        font-size:20px;
-        font-family: "Roboto", system-ui;
-      }
-      img{
-        position: relative;
-        margin:1em auto;
-        height:591px;
-        width:798px;
       }
       #toggle-nav{
-        background-color:transparent;
-        border:none;
-        font-size: 36px;
-        color: #d20000;
-        position:relative;
-        top:0em;
-        right:0em;
-        display:none;
+        display:block;
       }
-      @media (max-width:1000px){
-        #primary-nav{
-          display:grid;
-          grid-template-rows: 0fr;
-          transition: grid-template-rows 0.5s ease-out;
-        }
-        body.nav-open #primary-nav{
-          grid-template-rows: 1fr;
-        }
-        #primary-nav li{
-          display:block;
-        }
-        #toggle-nav{
-          display:block;
-        }
-        .inner{
-          overflow: hidden;
-          text-align:center;
-        }
-        h1{
-          width:100%;
-        }
-        p{
-          width:80%;
-          margin:2em;
-        }
-        img{
-          height:511px;
-          width:681px;
-        }
-        main{
-          width:100%
-        }
+      .inner{
+        overflow: hidden;
+        text-align:center;
       }
-      @media (max-width:666px){
-        img{
-          height:343px;
-          width:458px;
-        }
+      h1{
+        width:100%;
       }
-      @media (max-width:450px){
-        img{
-          height:222px;
-          width:296px;
-        }
+      p{
+        width:80%;
+        margin:2em;
       }
+      img{
+        height:511px;
+        width:681px;
+      }
+      main{
+        width:100%
+      }
+    }
+    @media (max-width:666px){
+      img{
+        height:343px;
+        width:458px;
+      }
+    }
+    @media (max-width:450px){
+      img{
+        height:222px;
+        width:296px;
+      }
+    }
     </style>
 </head>
 <body>
   <main>
-    <h1><a href="homepage.html">How to Draw Red From Angry Birds</a></h1>
+    <h1><a href="index.html">How to Draw Red From Angry Birds</a></h1>
     <button id="toggle-nav">&#9776;</button>
     <nav id="primary-nav" role="navigation">
      <div class="inner">
@@ -176,7 +171,7 @@
           });
         };
       </script>
-      <img src="step7.jpg">
+      <img src="images/step7.jpg">
       <h1>Step 7</h1>
       <p>For the extra marks, create a crescent moon shape on the sides of the eyes
         and two oval shapes on each side of the face. To finish it off, draw a curved line from the 
