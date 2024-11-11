@@ -23,6 +23,7 @@
         font-family: "Lemon", system-ui;
         color:#2E3F62;
         margin-top: 60px;
+        font-size: 50px;
       }
        p{
         margin-left: 120px;
@@ -50,7 +51,7 @@
           font-size: 17px;
         }
        .topnav a:hover {
-          background-color: #d973b4;
+          color: #d973b4;
         }
        .topnav a.active {
           color: #FFFFDC;
@@ -72,6 +73,13 @@
     float: right;
     display: block;
   }
+  .topnav .navbar2 > div{
+    display:none;
+    padding-top:60px;
+  }
+  .topnav.responsive .navbar2 > div{
+    display:block;
+  }
   p{
    margin-left: 30px;
    margin-right:30px;
@@ -80,18 +88,16 @@
     height:267px;
     width:431px;
   }
-}
-@media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .topnav.responsive .navbar2 a {
     float: none;
     display: block;
-    text-align: left;
+    text-align:right;
   }
 }
 @media screen and (max-width:450px) {
@@ -106,12 +112,14 @@
 <body>
     <div class="topnav" id="myTopnav">
       <div class="row">
-        <div class="navbar1"><a href="#">Alice in Wonderland</a></div>
+        <div class="navbar1"><a href="homepage.html">Alice in Wonderland</a></div>
         <div class="navbar2">
-         <a href="#">Description</a>
-         <a href="author.html">Author</a>
-         <a href="index.html" class="active">Meet Alice</a>
-         <a href="#">Reviews</a>
+          <div>
+            <a href="description.html">Description</a>
+            <a href="author.html">Author</a>
+            <a href="index.html" class="active">Meet Alice</a>
+            <a href="reviews.html">Reviews</a>
+          </div>
          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
          <i class="fa fa-bars"></i></a>
         </div>
@@ -119,7 +127,7 @@
     </div>
     <img src="alice.png" alt="alice">
     <div>
-      <h1>Alice</h1>
+      <h1>ALICE</h1>
       <p>In "Alice in Wonderland," young Alice follows a white rabbit down a rabbit hole and finds herself in a peculiar and enchanting world called Wonderland. Throughout her journey, she encounters a series of eccentric and whimsical characters, such as the Cheshire Cat, the Mad Hatter, and the Queen of Hearts. Alice navigates through a topsy-turvy realm where logic is often turned upside down, and nothing is as it seems. As she tries to make sense of this extraordinary world and find her way back home, Alice embarks on a delightful and sometimes bewildering adventure, filled with curious encounters and thought-provoking riddles. Along the way, she learns valuable lessons about identity, imagination, and the power of embracing one's curiosity</p>
     </div>
     <script>

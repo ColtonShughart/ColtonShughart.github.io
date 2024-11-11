@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Author- Alice in Wonderland</title>
+    <title>Welcome- Alice in Wonderland</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Lemon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -21,21 +21,21 @@
        h1{
         font-family: "Lemon", system-ui;
         color:#2E3F62;
-        margin-top: 60px;
+        margin-top: 90px;
         margin-left: 30px;
         margin-right:30px;
-        font-size: 50px;
+        font-size: 50px
       }
       p{
         margin-top: 30px;
         margin-left: 30px;
-        margin-right:30px;
+        margin-right:70px;
         font-size: 16px
       }
       img{
-        height: 680px;
-        width: 437px;
-        margin-top:20px
+        margin: 50px 30px 30px;
+        height: 600px;
+        width: 600px;
       }
         .topnav {
            overflow: hidden;
@@ -61,7 +61,6 @@
         }
         .navbar2{
           background-color:#E1BDE6;
-          position:relative;
         }
         .navbar1{
            background-color:#E1BDE6;
@@ -79,7 +78,31 @@
         .column2{
             float: right;
         }
-@media screen and (max-width: 800px) {
+        .hyperlink{
+            background-color:#E1BDE6;
+            height:50px;
+            width:200px;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: 50px;
+            margin-bottom:50px;
+            text-align:center;
+            font-family:"Lemon", system-ui;
+            font-size: 30px;
+            border-radius:10px;
+            padding-top:1em;
+            padding-left:1em;
+            padding-right:1em;
+            padding-bottom:20px;
+        }
+        a{
+            color:#2E3F62;
+            text-decoration: none;
+        }
+        .hyperlink > a:hover{
+            color:#d973b4;
+        }
+@media screen and (max-width: 1000px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -87,9 +110,6 @@
   }
   .flex{
     flex-direction:column;
-  }
-  .column2{
-    align-self: center;
   }
   .topnav .navbar2 > div{
     display:none;
@@ -111,15 +131,25 @@
   }
   p{
     text-align: center;
+    margin-right:30px;
   }
   h1{
     text-align: center;
   }
+  .column1{
+    margin:auto;
+  }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     img{
-        height:504px;
-        width:324px;
+        height:250px;
+        width:250px;
+    }
+    h1{
+        font-size:36px;
+    }
+    .column2{
+        margin-top: -80px;
     }
 }
 </style>
@@ -132,7 +162,7 @@
         <div class="navbar2">
             <div>
                 <a href="description.html">Description</a>
-                <a href="author.html" class="active">Author</a>
+                <a href="author.html">Author</a>
                 <a href="index.html">Meet Alice</a>
                 <a href="reviews.html">Reviews</a>
             </div>
@@ -143,13 +173,13 @@
     </div>
     <div class="flex">
     <div class="column1">
-        <h1>ABOUT THE AUTHOR</h1>
-        <p>Lewis Carroll, born Charles Lutwidge Dodgson on January 27, 1832, in Daresbury, England, was a mathematician, logician, and writer. He studied at Christ Church, Oxford, where he later became a lecturer in mathematics. Carroll was known for his wit and love of language, which deeply influenced his literary work.</p>
-        <p> His most famous creation, "Alice's Adventures in Wonderland," was inspired by a boat trip he took in 1862 with Alice Liddell and her sisters. He wrote the story to entertain them, and it was published in 1865, becoming an instant classic. Carroll also wrote a sequel, "Through the Looking-Glass," published in 1871.</p>
-        <p>Beyond his literary contributions, Carroll was a pioneer in photography and took portraits of notable figures and children, including Alice Liddell. He remained a lifelong bachelor and maintained a deep interest in childlike imagination and fantasy. Carroll passed away on January 14, 1898, but his works continue to captivate readers of all ages.</p>
-        </div>
+        <img src="rabbithole.png" alt="rabbit hole">
+    </div>
     <div class="column2">
-        <img src="cat.png" alt="cat">
+        <h1>WELCOME TO WONDERLAND</h1>
+        <p>"Alice's Adventures in Wonderland," written by Lewis Carroll, was first published in 1865.  He completed the manuscript in 1864 and sought an illustrator, eventually collaborating with John Tenniel, whose iconic illustrations became synonymous with the book.</p>
+        <p>The book was published by Macmillan & Co. in 1865, and it quickly gained popularity for its imaginative narrative and playful language. Carroll's unique style and the book's enduring themes of curiosity and identity have made "Alice's Adventures in Wonderland" a beloved classic in children's literature.
+        <div class="hyperlink"><a href="description.html">SEE MORE!</a>
     </div>
 </div>
     <script>
