@@ -8,9 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jockey+One&family=Lemon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Istok Web' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <style>
-    p{
+   p{
         font-family: 'Istok Web';
         font-size: 24px;
         margin-left:80px; margin-right:80px; margin-top: 50px;
@@ -39,7 +42,6 @@
         height:215px;
         width: 322px;
         margin-left:40px;
-        margin-right:0px;
         }
     }
     </style>
@@ -47,18 +49,21 @@
 <body>
     <div class="topnav" id="myTopnav">
         <div class="row">
-          <div class="navbar1"><a href="#">Brews & Bonds</a></div>
+          <div class="navbar1">
+            <a href="homepage.html">Brews & Bonds</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+          </div>
           <div class="navbar2">
               <div>
                   <a href="#" class="active">About</a>
-                  <a href="#">Menu</a>
-                  <a href="#">Events</a>
-                  <a href="#">Contact</a>
+                  <a href="menu.html">Menu</a>
+                  <a href="events.html">Events</a>
+                  <a href="contact.html">Contact</a>
               </div>
-          <button id="toggle-nav">&#9776;</button>
           </div>
         </div>
-    </div>
+      </div>
     <div class="flex">
        <div class="column1">
          <h1>Our History</h1>
@@ -73,17 +78,21 @@
          <p>Word quickly spread throughout Harrisburg about the coffee shop with an intriguing origin story. Brews & Bonds became a beloved fixture in the community, known not only for its exceptional coffee but also for the warmth and hospitality Jacob and Emily extended to each and every visitor. The couple poured their hearts into building relationships with their customers, learning their stories, and creating a space where everyone felt like family.</p>
          <p>Today, Brews & Bonds stands as a testament to the enduring power of love, passion, and a good cup of coffee. Jacob and Emily's journey from San Francisco to Harrisburg, guided by their shared love for coffee, has left an indelible mark on the local community. Their story continues to inspire coffee enthusiasts and dreamers alike, reminding us that sometimes, the perfect blend of love and passion can create something truly extraordinary.</p>
         </div>
-    </div>
+      </div>
+    <footer>&copy;2024Brews&Bonds
+      <p><b>Follow Us On:</b></p>
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="https://x.com/?lang=en" class="fa fa-twitter"></a>
+    </footer>
     <script>
-        window.onload=()=>{
-          let toggleNav = document.getElementById("toggle-nav");
-          toggleNav.addEventListener ('click', ()=>{
-            document.body.classList.toggle("nav-open");
-            toggleNav.innerHTML = document.body.classList.contains("nav-open")
-               ? "&#x2715"
-               : "&#9776;";
-          });
-        };
-    </script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>
