@@ -19,7 +19,7 @@ body{
    color: white;
  }
 .topnav a.active {
-   color: black;
+   color: #574d68;
  }
 .topnav .icon {
    display: none;
