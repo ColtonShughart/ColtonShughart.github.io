@@ -23,6 +23,7 @@ body{
  }
 .topnav .icon {
    display: none;
+   margin-top:-5px;
  }
  .navbar2{
    background-color: #D3DFB8;
